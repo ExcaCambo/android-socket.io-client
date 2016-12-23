@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_feed"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="1dp"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp"
+    android:paddingTop="1dp"
+    android:background="#E8EAF6"
+    tools:context="com.example.phearun.android_socketio_demo01.MainActivity">
+    <EditText
+        android:hint="What is your mind?"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/txtPost"
+        android:textColor="#000"
+        android:background="#C5CAE9"
+        android:padding="5dp"
+        />
+    <Button
+        android:id="@+id/btnPost"
+        android:layout_marginTop="55dp"
+        android:layout_alignRight="@+id/txtPost"
+        android:text="Post"
+        android:textColor="#fff"
+        android:background="@color/colorPrimary"
+        android:layout_width="50dp"
+        android:textSize="10dp"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:padding="5dp"
+        android:textColor="#EC407A"
+        android:background="#C5CAE9"
+        android:layout_below="@+id/txtPost"
+        android:id="@+id/tvTyping"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Someone is typing..."
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/btnPost"
+        android:id="@+id/mRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>
